@@ -1,0 +1,27 @@
+/* src/components/CommentDetail.css */
+.comment-detail-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.sentiment-box {
+  background: #f0f4f8;
+  border-left: 4px solid #007b60;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.comment-detail-container button {
+  background-color: #007b60;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-detail-container button:hover {
+  background-color: #005944;
+}

@@ -1,0 +1,130 @@
+/* src/components/Login.css */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f8fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-box {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 380px;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.auth-box h2 {
+  color: #333;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  background-color: #f9fafc;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.auth-box input:focus {
+  border-color: #2684ff;
+  outline: none;
+  background-color: #fff;
+}
+
+.auth-box button {
+  width: 100%;
+  background-color: #3b4b5a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-box button:hover {
+  background-color: #2f3f4f;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.auth-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+.switch-text {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #555;
+}
+
+.switch-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #d93025;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* ✅ Success Box */
+.success-box {
+  background-color: #e6f4ea;
+  border: 1px solid #9ae19d;
+  color: #137333;
+  border-radius: 6px;
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.user-type-select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+}
