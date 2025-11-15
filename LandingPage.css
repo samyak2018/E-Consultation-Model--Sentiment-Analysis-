@@ -1,0 +1,322 @@
+/* Top Bar */
+.top-bar {
+  background-color: #042241;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 40px;
+  font-size: 13px;
+}
+
+.top-left a,
+.top-right a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.top-left a:hover,
+.top-right a:hover {
+  text-decoration: underline;
+}
+
+.top-right button {
+  background: #0f6a94;
+  border: none;
+  color: white;
+  padding: 2px 8px;
+  margin: 0 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mca-logo {
+  height: 80px;
+}
+
+.logo-text h2 {
+  margin: 0;
+  color: #042241;
+  font-weight: 700;
+}
+
+.logo-text p {
+  color: #0f6a94;
+  margin: 3px 0;
+  font-weight: 600;
+}
+
+.logo-text span {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  background: #d8e5f1;
+  border-radius: 30px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+  background: none;
+}
+
+.search-bar button {
+  border: none;
+  background: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  background-color: #042241;
+  color: white;
+  padding: 0 40px;
+  align-items: center;
+  position: relative;
+}
+
+.nav-bar a,
+.nav-bar button {
+  color: rgb(225, 226, 237);
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.nav-bar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #160f94;
+}
+
+/* Dropdown */
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #042241;
+  top: 50px;
+  left: 0;
+  min-width: 180px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:hover {
+  background-color: #0f6a94;
+}
+
+.active-item {
+  background-color: #0f6a94;
+}
+
+
+/* Hero Section */
+.hero-section {
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  color: #666;
+  font-size: 14px;
+}
+
+.breadcrumb .highlight {
+  font-weight: bold;
+  color: #042241;
+}
+
+.title-bar {
+  background-color: #eaf6fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.title-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #042241;
+}
+
+.title-left h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.title-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-right input {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.title-right a {
+  color: #0f6a94;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.title-right a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Ensure header and dropdown appear above hero section */
+header {
+  position: relative;
+  z-index: 2000;
+}
+
+/* Navbar Links */
+.nav-bar a {
+
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-bar a:hover {
+  background: rgba(0, 123, 255, 0.1); /* Soft hover background */
+  transform: translateY(-2px);
+}
+
+/* Active link style */
+.nav-bar a.active-link {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* Dropdown Section */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background: transparent;
+  border: none;
+  color: #007bff; /* ✅ Blue text like other menu items */
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropbtn:hover {
+  color: #0056b3;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 6px; /* ✅ Fixed border radius */
+  padding: 0.5rem 0; /* ✅ Reduced vertical padding */
+  display: flex;
+  flex-direction: column;
+  min-width: 160px; /* ✅ Made box smaller */
+  max-width: 180px; /* ✅ Prevents overly wide dropdown */
+  z-index: 9999;
+  animation: dropdownFade 0.25s ease-in-out;
+}
+
+/* Dropdown Items */
+.dropdown-content a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* ✅ Compact padding for smaller dropdown */
+  display: block;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect inside dropdown */
+.dropdown-content a:hover {
+  background: #eaf3ff;
+  color: #0056b3;
+  border-left: 3px solid #0056b3;
+  padding-left: 1.2rem;
+}
+/* Hover effect inside dropdown */
+.dropdown-content a:hover {
+  background: #eaf3ff;
+  color: #0056b3;
+  border-left: 3px solid #0056b3;
+  padding-left: 1.4rem;
+}
+
+/* Active item */
+.dropdown-content .active-item {
+  background: #007bff;
+  color: #fff;
+  border-left: 4px solid #004b87;
+}
+
+/* Dropdown Smooth Animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

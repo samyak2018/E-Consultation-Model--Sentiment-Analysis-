@@ -1,0 +1,246 @@
+/* src/components/Signup.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Outer Background */
+.signup-outer-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #1a1625;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card with Rounded Border */
+.signup-card {
+  display: flex;
+  width: 85%;
+  max-width: 1100px;
+  height: 90vh;
+  background: #201c2d;
+  border-radius: 20px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+/* Left Section with Dark Mountain Image */
+.signup-left {
+  flex: 1;
+  background: url("C:\Users\HP\Desktop\React_project\sentiment-analysis\src\img\back.jpg")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+.signup-left .overlay {
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  color: #ffffff;
+  max-width: 80%;
+}
+
+.signup-left h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.signup-left p {
+  font-size: 15px;
+  color: #f5f5f5;
+}
+
+/* Right Form */
+.signup-right {
+  flex: 1;
+  background-color: #1f1b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 380px;
+}
+
+.form-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.login-text {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-text a {
+  color: #7c5cff;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Inputs */
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #3a324d;
+  background-color: #2b2640;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #7c5cff;
+  box-shadow: 0 0 6px rgba(124, 92, 255, 0.5);
+}
+
+/* Password Eye Icon */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Password Strength */
+.password-strength {
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Terms Checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.terms input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #7c5cff;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.terms input[type="checkbox"]:checked {
+  background-color: #7c5cff;
+  border-color: #7c5cff;
+}
+
+.terms input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.terms a {
+  color: #7c5cff;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Create Account Button */
+.create-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #7c5cff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #6a49e8;
+  transform: scale(1.02);
+}
+
+/* Error + Success */
+.error {
+  color: #ff6b6b;
+  font-size: 13px;
+}
+
+.success-box {
+  background: rgba(124, 92, 255, 0.1);
+  border: 1px solid #7c5cff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #7c5cff;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .signup-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .signup-left {
+    height: 250px;
+  }
+
+  .signup-right {
+    padding: 40px 20px;
+  }
+
+  .form-container {
+    width: 90%;
+    margin-top: 20px;
+  }
+}

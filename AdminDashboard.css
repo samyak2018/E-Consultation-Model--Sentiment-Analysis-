@@ -1,0 +1,245 @@
+/* === Layout & Font === */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f0f7ff, #e8f4fa);
+  font-family: "Poppins", sans-serif;
+  color: #1e293b;
+}
+
+/* === Top Navbar === */
+.top-navbar {
+  background: linear-gradient(90deg, #0a3d62, #155e75);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.logo .highlight {
+  color: #f0f7ff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: #d1e5f9;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links button:hover,
+.nav-links button.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.search-box {
+  background: white;
+  border-radius: 8px;
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: #0a3d62;
+  background: transparent;
+}
+
+.search-icon {
+  color: #0a3d62;
+  margin-right: 8px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* === Main Content === */
+.main-content {
+  flex: 1;
+  padding: 35px 50px;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
+}
+
+/* Icons */
+.icon {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+}
+.icon.users { color: #38bdf8; }
+.icon.datasets { color: #22c55e; }
+.icon.analyses { color: #facc15; }
+.icon.notifications { color: #ef4444; }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+  background: #e0f2fe;
+  color: #075985;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Actions */
+.action {
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.action.edit { color: #3b82f6; }
+.action.delete { color: #ef4444; }
+.action.approve { color: #22c55e; }
+.action.reject { color: #f97316; }
+.action:hover {
+  transform: scale(1.15);
+}
+
+/* Upload Section */
+.upload-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+.upload-box input {
+  border: 1px solid #94a3b8;
+  padding: 8px;
+  border-radius: 6px;
+}
+.upload-box button {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.upload-box button:hover {
+  background: #0284c7;
+}
+
+/* Notification Section */
+.notif-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.notif-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.notif-input button {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.notif-input button:hover {
+  background-color: #16a34a;
+}
+
+.notif-item {
+  background: #f0fdf4;
+  border-left: 5px solid #22c55e;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Scrollbar */
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  border-radius: 8px;
+}
